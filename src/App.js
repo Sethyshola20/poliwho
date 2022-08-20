@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import './assets/App.scss';
+import Representative from './components/Representative';
+import SearchBar from './components/SearchBar'
+import React, {useState, useEffect} from 'react';
 
 function App() {
+
+  const [representative, setRepresentative] = useState()
+  const [searchValue, setSearchValue] = useState('')
+
+  const fetchRepresentative = async() => {
+    await fetch('https://www.nosdeputes.fr/deputes/json')
+    .then(res => res.json())
+    .then(data => setRepresentative(data))
+    .then(console.log(representative.deputes))
+  }
+
+  useEffect(() => {
+    fetchRepresentative()
+  }, [])
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <SearchBar searchValue={searchValue} />
+      <Representative representative={representative}/>
+    </>
   );
 }
 
