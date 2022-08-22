@@ -1,0 +1,212 @@
+$primary-color: #E5E7E9;
+$secondary-color: white;
+$card-height: 360px;
+$card-width: 170px;
+
+
+*{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+a{
+    color: unset;
+}
+a:visited{
+    color: unset;
+}
+
+
+.top-nav{
+    background: linear-gradient(90deg, rgba(245,2,2,1) 0%, rgba(143,10,105,1) 29%, rgba(55,163,105,1) 38%, rgba(178,147,46,1) 50%, rgba(30,38,205,1) 59%, rgba(38,103,191,1) 100%, rgba(0,212,255,1) 100%);;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 35px;
+    max-height: 45px;
+    z-index: 2;
+    width: 100%;
+    top: 0;
+    nav{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        .navbar-menu{
+            display: flex;
+            justify-content: space-around;
+            height: 100%;
+            width: 100%;
+            li{
+                color: $primary-color;
+            }
+            li:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+body{
+    background-color: $primary-color;
+}
+
+h1{
+    font-size: 20px;
+    padding: 2em 0 2em .5em;
+}
+.rep-container{
+    max-width: 100%;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    padding: .5em;
+    .LR{
+        background-color: blue;
+        color: $secondary-color;
+    }
+    .LFI{
+        background-color: red;
+        color: $secondary-color;
+    }
+    .RN{
+        background-color: brown;
+        color: $secondary-color;
+    }
+    .MODEM{
+        background-color: orange;
+        color: $secondary-color;
+    }
+    .REN{
+        background-color: rgba(229, 229, 52, 0.838);
+        color: $secondary-color;
+    }
+    .ECO{
+        background-color: green;
+        color: $secondary-color;
+    }
+    .SOC{
+        background-color: pink;
+        color: $secondary-color;
+    }
+    .HOR{
+        background-color: lightblue;
+        color: $secondary-color;
+    }
+    .GDR{
+        background-color: rgb(125, 42, 42);
+        color: $secondary-color;
+    }
+    h4{
+        font-size: 13px;
+        padding: .25em 0;
+        border-radius: 2px;
+    }
+    h3{
+        font-size: 16px;
+        span{
+            font-size: 12px;
+            opacity: 0.7;
+        }
+    }
+    .rep-card{
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        align-items: center;
+        justify-content: space-between;
+        padding: .5em;
+        margin: 0 .25em 1.5em .25em;
+        background-color: $secondary-color;
+        height: $card-height;
+        width: $card-width;
+        .birth{
+            font-size: 11px;
+            opacity: .7;
+        }
+        .profile-pic{
+            object-fit: cover;
+            padding-top: .5em;
+            width: 100%;
+            border-radius: 2px;
+        }
+        .rep-header, .rep-footer{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+        .rep-header{
+            align-items: baseline;
+            
+        }
+        h4{
+            padding: .5em;
+        }
+        .rep-footer{
+            flex-direction: column;
+            justify-content: space-around;
+            .mandats{
+                font-size: 10px;
+            }
+            .localisation{
+                display: flex;
+                flex-direction: column;
+                .num-circo{
+                    font-size: 12px;
+                    opacity: .7;
+                }
+                .nom-circo{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0 0 0.05em 0;
+                    font-size: 12px;
+                    h5{
+                        font-size: 12px;
+                    }
+                }
+                    
+                
+            }
+            .lien-site{
+                display: flex;
+                justify-content: center;
+                padding: 1em;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+form{
+    margin: 1em 0 0 .5em ;
+    input{
+        width: 20em;
+    }
+}
+
+@media  screen and (min-width: 800px) {
+    .rep-container{
+        justify-content: space-evenly;
+        .rep-card{
+            height: 400px;
+            width: 220px;
+        }
+    }
+}
+@media  screen and (min-width: 1150px) {
+    main.rep-container{
+        article.rep-card{
+            height: 450px;
+            width: 260px;
+        }
+    }
+}

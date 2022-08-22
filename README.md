@@ -71,3 +71,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 This is an app that lets you know who is your representative in parliament, use the serach bar and input your department name number or the name of your circonscription
+
