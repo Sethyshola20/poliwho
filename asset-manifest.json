@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Sethyshola20/poliwho/static/css/main.6af1ffaa.css",
+    "main.js": "/Sethyshola20/poliwho/static/js/main.bf1be37b.js",
+    "static/js/787.87117df9.chunk.js": "/Sethyshola20/poliwho/static/js/787.87117df9.chunk.js",
+    "index.html": "/Sethyshola20/poliwho/index.html",
+    "main.6af1ffaa.css.map": "/Sethyshola20/poliwho/static/css/main.6af1ffaa.css.map",
+    "main.bf1be37b.js.map": "/Sethyshola20/poliwho/static/js/main.bf1be37b.js.map",
+    "787.87117df9.chunk.js.map": "/Sethyshola20/poliwho/static/js/787.87117df9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6af1ffaa.css",
+    "static/js/main.bf1be37b.js"
+  ]
+}
