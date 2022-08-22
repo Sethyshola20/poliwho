@@ -9,7 +9,7 @@ export default function Representatives({representatives, search, }) {
                 //we filter the api response to only display the representatives cards that meet certain characteristics
                 if(search === '' ) {
                     return elu
-                } else if(elu.depute.groupe_sigle.toLowerCase() == (search.toLowerCase())){
+                } else if(elu.depute.groupe_sigle.toLowerCase() === (search.toLowerCase())){
                     return elu
                 } else if(elu.depute.nom.toLowerCase().includes(search.toLowerCase())){
                     return elu
