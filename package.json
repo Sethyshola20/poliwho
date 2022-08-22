@@ -2,6 +2,7 @@
   "name": "poliwho",
   "version": "0.1.0",
   "private": false,
+  "homepage": "https://Sethyshola20.github.io/poliwho",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -14,7 +15,7 @@
     "sass": "^1.54.4",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://github.io/Sethyshola20/poliwho/",
+  
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
