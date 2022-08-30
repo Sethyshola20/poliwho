@@ -20,38 +20,12 @@ a{
 a:visited{
     color: unset;
 }
-
-
-.top-nav{
-    background: linear-gradient(90deg, rgba(245,2,2,1) 0%, rgba(143,10,105,1) 29%, rgba(55,163,105,1) 38%, rgba(178,147,46,1) 50%, rgba(30,38,205,1) 59%, rgba(38,103,191,1) 100%, rgba(0,212,255,1) 100%);;
-    position: sticky;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 35px;
-    max-height: 45px;
-    z-index: 2;
-    width: 100%;
-    top: 0;
-    nav{
-        display: flex;
-        align-items: center;
-        height: 100%;
-        width: 100%;
-        .navbar-menu{
-            display: flex;
-            justify-content: space-around;
-            height: 100%;
-            width: 100%;
-            li{
-                color: $primary-color;
-            }
-            li:hover{
-                cursor: pointer;
-            }
-        }
-    }
+h3, h4, h5{
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif
+    ;
 }
+
+
 
 body{
     background-color: $primary-color;
@@ -69,41 +43,35 @@ h1{
     align-items: baseline;
     justify-content: space-around;
     padding: .5em;
-    .LR{
-        background-color: blue;
+    h4{
         color: $secondary-color;
+    }
+    .LR{
+        background-color: rgb(30,30,200);
     }
     .LFI{
-        background-color: red;
-        color: $secondary-color;
+        background-color: rgb(204,42,70);
     }
     .RN{
-        background-color: brown;
-        color: $secondary-color;
+        background-color: rgb(165,165,165);
     }
     .MODEM{
-        background-color: orange;
-        color: $secondary-color;
+        background-color: rgb(246,137,14);
     }
     .REN{
-        background-color: rgba(229, 229, 52, 0.838);
-        color: $secondary-color;
+        background-color: rgb(231,196,7);
     }
     .ECO{
         background-color: green;
-        color: $secondary-color;
     }
     .SOC{
-        background-color: pink;
-        color: $secondary-color;
+        background-color: rgb(255,50,190);
     }
     .HOR{
-        background-color: lightblue;
-        color: $secondary-color;
+        background-color: rgb(99,227,254);
     }
     .GDR{
-        background-color: rgb(125, 42, 42);
-        color: $secondary-color;
+        background-color: rgb(254,29,29);
     }
     h4{
         font-size: 13px;
@@ -128,6 +96,7 @@ h1{
         background-color: $secondary-color;
         height: $card-height;
         width: $card-width;
+        transition: all .2s ease-in;
         .birth{
             font-size: 11px;
             opacity: .7;
@@ -169,25 +138,40 @@ h1{
                     justify-content: space-between;
                     padding: 0 0 0.05em 0;
                     font-size: 12px;
+                    color: black;
                     h5{
                         font-size: 12px;
                     }
                 }
-                    
-                
             }
             .lien-site{
                 display: flex;
                 justify-content: center;
                 padding: 1em;
                 font-size: 14px;
+                a{
+                    transition: .2s ease-in;
+                }
+                a:hover{
+                    color: rgb(28,155,239);
+                }
             }
         }
     }
+    .rep-card:hover{
+         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+         transform: translateY(-10px);
+         transform: scale(1.015);
+    }
 }
 
-form{
-    margin: 1em 0 0 .5em ;
+.form{
+    padding: 2em 0 1.5em .5em ;
+    background-color: #E5E7E9;
+    z-index: 4;
+    position: sticky;
+    top: 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     input{
         width: 20em;
     }
