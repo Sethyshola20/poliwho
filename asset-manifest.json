@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/poliwho/static/css/main.6af1ffaa.css",
-    "main.js": "/poliwho/static/js/main.1c053ed1.js",
+    "main.css": "/poliwho/static/css/main.1b3d8e2a.css",
+    "main.js": "/poliwho/static/js/main.7adb5725.js",
     "static/js/787.87117df9.chunk.js": "/poliwho/static/js/787.87117df9.chunk.js",
     "index.html": "/poliwho/index.html",
-    "main.6af1ffaa.css.map": "/poliwho/static/css/main.6af1ffaa.css.map",
-    "main.1c053ed1.js.map": "/poliwho/static/js/main.1c053ed1.js.map",
+    "main.1b3d8e2a.css.map": "/poliwho/static/css/main.1b3d8e2a.css.map",
+    "main.7adb5725.js.map": "/poliwho/static/js/main.7adb5725.js.map",
     "787.87117df9.chunk.js.map": "/poliwho/static/js/787.87117df9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6af1ffaa.css",
-    "static/js/main.1c053ed1.js"
+    "static/css/main.1b3d8e2a.css",
+    "static/js/main.7adb5725.js"
   ]
 }
