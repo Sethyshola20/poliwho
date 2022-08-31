@@ -47,7 +47,7 @@ export default function Representatives({ representatives, search }) {
               <div className="profile-pic">
                 <img
                   className="profile-pic"
-                  src={`https://2017-2022.nosdeputes.fr/depute/photo/${elu.depute.prenom.toLowerCase()}-${
+                  src={`https://www.nosdeputes.fr/depute/photo/${elu.depute.prenom.toLowerCase()}-${
                     elu.depute.nom_de_famille
                   }/1000`}
                   alt="profil du député"

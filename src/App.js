@@ -36,7 +36,7 @@ function App() {
       {loading ? (
         <div>loading...</div>
       ) : (
-        <h1>Les députés de la 14e législature:</h1>
+        <h1>Les députés de la 15e législature:</h1>
       )}
       <Representative representatives={representatives} search={search} />
     </>
